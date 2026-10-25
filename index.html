@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>emora — 감정과 행동 사이, 작은 틈</title>
+  <meta name="description" content="복합감정을 알아차리고 감정과 행동 사이에 틈을 만드는 워치·모바일 연계형 감정 케어 서비스, emora" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<div class="stage">
+
+  <!-- 1. Hero ─────────────────────────────────────────────────────────── -->
+  <header class="sec hero" id="top">
+    <div class="hero__blob" data-depth="40" style="left:260px;top:90px;width:700px;--dur:20s"><img src="assets/mf-g37.svg" alt="" /></div>
+    <div class="hero__blob" data-depth="-60" style="left:930px;top:200px;width:760px;--dur:26s"><img src="assets/mf-g36.svg" alt="" /></div>
+    <div class="hero__blob" data-depth="25" style="left:620px;top:430px;width:640px;--dur:32s"><img src="assets/mf-g38.svg" alt="" /></div>
+
+    <h1 class="abs hero__logo" data-r="wipe" data-d="200"><img src="assets/overview-logo.svg" width="258" height="38.784" alt="emora" /></h1>
+    <p class="abs hero__tag t-sm center-x" data-r="lines" data-d="700">
+      <span class="ln"><span>복잡한 마음을 알아차리고, 감정과 행동 사이에 틈을 만듭니다</span></span>
+    </p>
+    <a class="abs hero__cue" href="#overview" style="translate:-50% 0" data-r="fade" data-d="1400"><span>SCROLL</span><i></i></a>
+  </header>
+
+  <!-- 2. Overview ─────────────────────────────────────────────────────── -->
+  <section class="sec overview" id="overview">
+    <div class="abs motion-panel" data-r="clip">
+      <div class="venn" aria-live="polite">
+        <div class="venn__c venn__c--a"><span class="venn__word" data-venn="a">설렘</span></div>
+        <div class="venn__c venn__c--b"><span class="venn__word" data-venn="b">불안</span></div>
+        <div class="venn__gap"></div>
+      </div>
+      <p class="abs motion-panel__en" data-venn="en">EXCITEMENT + ANXIETY</p>
+      <p class="abs motion-panel__ko">하나의 감정으로 단정하지 않고, 함께 살펴봅니다</p>
+    </div>
+
+    <div class="abs overview__band" data-band></div>
+    <div class="abs" style="left:281px;top:1224px;width:258px;height:38.784px" data-r="wipe"><img src="assets/overview-logo.svg" width="258" height="38.784" alt="emora" /></div>
+    <p class="abs t-sm main-copy" style="left:674px;top:1224px;white-space:nowrap" data-r="copy" data-d="150">복잡한 마음을 알아차리고, 감정과 행동 사이에 틈을 만듭니다</p>
+    <p class="abs b-md" style="left:676px;top:1280px;width:996px" data-r="up" data-d="300">emora는 서로 다른 감정이 함께 나타나는 복합감정을 알아차리고, 감정과 행동 사이에 작은 틈을 만드는 워치·모바일 연계형 감정 케어 서비스입니다. 설레면서도 불안하고, 기쁘면서도 허전한 마음을 하나의 감정으로 단정하지 않고 함께 살펴봅니다. 워치의 생체 변화 알림을 계기로 감정과 충동을 확인하고, 짧은 회복 행동으로 바로 반응하기 전 잠시 멈출 틈을 만듭니다. 그 틈에서 자신에게 맞는 행동을 선택하고, 회복 전후의 변화와 반복되는 패턴을 돌아보며 서로의 경험과 응원을 통해 건강한 내일로 나아가도록 돕습니다.</p>
+  </section>
+
+  <!-- 3. Mixed feeling ────────────────────────────────────────────────── -->
+  <section class="sec mixed">
+    <p class="abs cap" style="left:200px;top:200px;color:var(--teal)" data-r="up">Background</p>
+    <h2 class="abs t-bg" style="left:200px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>여러 감정이 함께하는</span></span>
+      <span class="ln"><span>우리의 일상</span></span>
+    </h2>
+    <p class="abs b-md" style="left:200px;top:420px;width:735px" data-r="up" data-d="300">emora는 생체 신호의 변화를 감지해 상태를 확인할 시점을 틈으로 제안합니다.<br />사용자는 알림을 계기로 자신의 몸과 마음의 변화를 차분하고 세심하게 살펴보며, 신체 반응과<br />감정의 흐름을 직접 확인하고 현재 상태를 조금 더 구체적으로 인식합니다.</p>
+
+    <div class="abs" data-r="blur" data-d="200" style="left:0;top:0;width:1920px;height:1559px">
+      <!-- Each petal drifts on its own path/tempo (--fx/--fy/--fdur/--fdel) while it slowly turns -->
+      <div class="petal" style="left:729px;top:352px;width:785.434px;height:785.434px;--fx:38px;--fy:-30px;--fdur:13s;--fdel:-3s">
+        <div class="petal__spin" style="--spin:48s">
+          <div style="width:574.978px;height:574.978px;opacity:.7;transform:rotate(120deg)"><img src="assets/mf-e18.svg" alt="" /></div>
+          <div style="width:574.978px;height:574.978px;opacity:.7;transform:rotate(120deg)"><img src="assets/mf-e19.svg" alt="" /></div>
+          <div style="width:574.978px;height:574.978px;opacity:.7;transform:rotate(120deg)"><img src="assets/mf-g36.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="petal" style="left:348.25px;top:691.11px;width:613.656px;height:613.656px;opacity:.7;--fx:-34px;--fy:26px;--fdur:16s;--fdel:-8s">
+        <div class="petal__spin" style="--spin:64s;--dir:reverse"><div style="width:613.656px;height:613.656px"><img src="assets/mf-g37.svg" alt="" /></div></div>
+      </div>
+      <div class="petal" style="left:274px;top:617.8px;width:760.64px;height:760.64px;--fx:26px;--fy:34px;--fdur:19s;--fdel:-12s">
+        <div class="petal__spin" style="--spin:56s">
+          <div style="width:613.656px;height:613.656px;opacity:.35;transform:rotate(-73.78deg)"><img src="assets/mf-e20.svg" alt="" /></div>
+          <div style="width:613.656px;height:613.656px;opacity:.35;transform:rotate(-73.78deg)"><img src="assets/mf-e21.svg" alt="" /></div>
+        </div>
+      </div>
+      <div class="petal" style="left:717.9px;top:849.91px;width:649.046px;height:649.046px;--fx:-28px;--fy:-36px;--fdur:15s;--fdel:-5s">
+        <div class="petal__spin" style="--spin:44s;--dir:reverse">
+          <div style="width:553.593px;height:553.593px;opacity:.7;transform:rotate(-101deg)"><img src="assets/mf-e22.svg" alt="" /></div>
+          <div style="width:553.593px;height:553.593px;opacity:.7;transform:rotate(-101deg)"><img src="assets/mf-e23.svg" alt="" /></div>
+          <div style="width:553.593px;height:553.593px;opacity:.7;transform:rotate(-101deg)"><img src="assets/mf-g38.svg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="abs" style="left:718px;top:881px;font-size:75px;font-weight:500;line-height:1.45;color:var(--teal-hover);white-space:nowrap" data-r="blur" data-d="600">Mixed Feeling</p>
+    <p class="abs t-sm" style="left:753px;top:994px;color:var(--gray-2);white-space:nowrap" data-r="up" data-d="800">하나의 감정으로 설명되지 않는 마음</p>
+
+    <div class="abs pair" style="left:427px;top:910px" data-r="up" data-d="1000">
+      <p class="pair__en"><span class="pair__num"><img src="assets/dot-num.svg" alt="" /><b>1</b></span><b style="font-weight:600">Excitement + Anxiety</b></p>
+      <p class="pair__ko">새로운 시작이 설레지만 잘할 수 있을 지 불안해요</p>
+    </div>
+    <div class="abs pair" style="left:1480.5px;top:910px" data-r="up" data-d="1150">
+      <p class="pair__en"><span class="pair__num"><img src="assets/dot-num.svg" alt="" /><b>2</b></span><span>Relief + Emptiness</span></p>
+      <p class="pair__ko">바라던 일을 끝내 후련하지만, 한편으로는 허전해요</p>
+    </div>
+  </section>
+
+  <!-- 4. Watch ────────────────────────────────────────────────────────── -->
+  <section class="sec watch-sec">
+    <p class="abs cap" style="left:200px;top:200px" data-r="up">Smart Watch</p>
+    <h2 class="abs t-bg" style="left:200px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>평소와 다른 흐름을</span></span>
+      <span class="ln"><span>먼저 알아차립니다</span></span>
+    </h2>
+    <p class="abs b-md" style="left:200px;top:420px;width:735px" data-r="up" data-d="300">사용자는 생체 신호의 변화를 감지하고, 평소와 다른 흐름이 나타나면 알림을<br />통해 현재 감정 상태를 확인합니다. 이를 통해 감정 변화의 시작을 인지합니다.</p>
+
+    <div class="abs watch-wrap" data-r="scale" data-d="200">
+      <span class="strap strap--t"></span><span class="strap strap--b"></span>
+      <div class="watch">
+        <span class="watch__crown"></span>
+        <div class="watch__screen">
+          <p class="watch__label">심박수</p>
+          <p class="watch__bpm"><span data-bpm>72</span><small>BPM</small></p>
+          <svg class="ecg" viewBox="0 0 220 60" aria-hidden="true"><path pathLength="400" d="M0 30 H60 L72 30 L80 12 L90 52 L100 4 L110 40 L118 30 H150 L160 24 L170 30 H220" /></svg>
+        </div>
+      </div>
+    </div>
+    <div class="abs notice" data-r="left" data-d="900">
+      <p class="notice__t">emora</p>
+      <p class="notice__b">생체 신호가 10분 전과 비교해 조금 다른 흐름을 보이고 있어요.</p>
+    </div>
+  </section>
+
+  <!-- 5. Impulsivity ──────────────────────────────────────────────────── -->
+  <section class="sec impulse">
+    <p class="abs cap" style="left:962px;top:200px;color:var(--teal)" data-r="up">Background</p>
+    <h2 class="abs t-bg" style="left:962px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>감정에 머무르지 않고,</span></span>
+      <span class="ln"><span>충동 행동으로 이어지는 순간</span></span>
+    </h2>
+    <p class="abs b-md" style="left:962px;top:420px;width:735px" data-r="up" data-d="300">복합 감정은 마음속에 머무르지 않고, 충동적인 소비나 회피, 반응으로 이어집니다. 충동의 종류와 정도는 감정과 상황에 따라 달라지며, 같은 행동도 서로 다른 감정에서 비롯될 수 있습니다. 행동만으로 원인을 단정하기보다, 감정이 충동 행동으로 이어지기 전 틈이 필요합니다.</p>
+
+    <div class="abs dims" data-r="clip" data-dims>
+      <div class="dims__photo" data-depth-scroll="-0.06"><img src="assets/five-dims.png" alt="안경을 벗고 얼굴을 감싼 사람" loading="lazy" /></div>
+      <div class="dims__shade"></div>
+      <span class="abs" style="left:73px;top:64px;width:10px;height:10px;border-radius:50%;background:var(--teal-hover)"></span>
+      <p class="abs t-sm" style="left:126px;top:46px;color:var(--teal-hover);white-space:nowrap">Five Dimensions of Impulsivity</p>
+      <p class="abs t-sm" style="left:126px;top:88px;color:var(--gray);white-space:nowrap">충동성 5가지 차원</p>
+      <div class="dims__dots" role="tablist" aria-label="충동성 차원"></div>
+      <div class="dims__item" aria-live="polite">
+        <p class="dims__row t-sm" style="white-space:nowrap"><span data-dim="ko">부정 긴급성</span><span data-dim="en">Negative Urgency</span></p>
+        <p class="dims__desc t-sm" data-dim="desc" style="white-space:nowrap">강한 부정적 감정에 성급히 행동하는 경향</p>
+      </div>
+    </div>
+
+    <div class="abs facets" data-r="scale">
+      <p class="abs t-sm" style="left:66px;top:47px;color:var(--teal-hover);white-space:nowrap">Multiple Facets of Impulsivity</p>
+      <p class="abs t-sm" style="left:66px;top:89px;color:var(--gray);white-space:nowrap">하나의 행동에 작용하는 여러 충동성</p>
+      <div class="abs mesh" data-mesh>
+        <!-- lines draw left → right, staggered -->
+        <div data-r="wipe" style="inset:11.96% 7.14% 78.53% 7.14%"><img src="assets/mesh-v0.svg" alt="" style="top:-2.14%;height:104.28%" /></div>
+        <div data-r="wipe" style="inset:11.96% 7.14% 40.49% 7.14%"><img src="assets/mesh-v1.svg" alt="" style="top:-0.43%;height:100.86%" /></div>
+        <div data-r="wipe" style="inset:21.47% 7.14% 69.02% 7.14%"><img src="assets/mesh-v2.svg" alt="" style="top:-2.14%;height:104.28%" /></div>
+        <div data-r="wipe" style="inset:30.98% 7.14% 21.47% 7.14%"><img src="assets/mesh-v1.svg" alt="" style="top:-0.43%;height:100.86%" /></div>
+        <div data-r="wipe" style="inset:40.49% 7.14% 50% 7.14%"><img src="assets/mesh-v2.svg" alt="" style="top:-2.14%;height:104.28%" /></div>
+        <div data-r="wipe" style="inset:50% 7.14% 40.49% 7.14%"><img src="assets/mesh-v0.svg" alt="" style="top:-2.14%;height:104.28%" /></div>
+        <div data-r="wipe" style="inset:40.49% 7.14% 30.98% 7.14%"><img src="assets/mesh-v3.svg" alt="" style="top:-0.71%;height:101.42%" /></div>
+        <div data-r="wipe" style="inset:69.02% 7.14% 21.47% 7.14%"><img src="assets/mesh-v0.svg" alt="" style="top:-2.14%;height:104.28%" /></div>
+        <div data-r="wipe" style="inset:21.47% 7.14% 11.96% 7.14%"><img src="assets/mesh-v4.svg" alt="" style="top:-0.31%;height:100.62%" /></div>
+        <div data-r="wipe" style="inset:59.51% 7.14% 11.96% 7.14%"><img src="assets/mesh-v3.svg" alt="" style="top:-0.71%;height:101.42%" /></div>
+        <!-- impulsivity nodes -->
+        <div data-r="pop" class="mesh__dot-l" style="inset:9.11% 91.79% 85.19% 6.07%"><img src="assets/mesh-dot-l.svg" alt="" /></div>
+        <div data-r="pop" class="mesh__dot-l" style="inset:28.13% 91.79% 66.17% 6.07%"><img src="assets/mesh-dot-l2.svg" alt="" /></div>
+        <div data-r="pop" class="mesh__dot-l" style="inset:47.15% 91.79% 47.15% 6.07%"><img src="assets/mesh-dot-l.svg" alt="" /></div>
+        <div data-r="pop" class="mesh__dot-l" style="inset:66.17% 91.79% 28.13% 6.07%"><img src="assets/mesh-dot-l.svg" alt="" /></div>
+        <div data-r="pop" class="mesh__dot-l" style="inset:85.19% 91.79% 9.11% 6.07%"><img src="assets/mesh-dot-l.svg" alt="" /></div>
+        <!-- behavior nodes -->
+        <div data-r="pop" class="mesh__dot-r" style="inset:18.14% 5.89% 75.2% 91.61%"><img src="assets/mesh-dot-r.svg" alt="" /></div>
+        <div data-r="pop" class="mesh__dot-r" style="inset:37.16% 5.89% 56.18% 91.61%"><img src="assets/mesh-dot-r.svg" alt="" /></div>
+        <div data-r="pop" class="mesh__dot-r" style="inset:56.18% 5.89% 37.16% 91.61%"><img src="assets/mesh-dot-r.svg" alt="" /></div>
+        <div data-r="pop" class="mesh__dot-r" style="inset:75.2% 5.89% 18.14% 91.61%"><img src="assets/mesh-dot-r.svg" alt="" /></div>
+        <p class="mesh__lbl" style="left:3.18%;top:94.93%">IMPULSIVITY</p>
+        <p class="mesh__lbl" style="left:88.88%;top:94.93%">BEHAVIOR</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Interview ────────────────────────────────────────────────────── -->
+  <section class="sec interview">
+    <p class="abs cap" style="left:196px;top:200px" data-r="up">In-Depth Interview</p>
+    <h2 class="abs t-bg" style="left:196px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>저마다 다른 마음과 행동,</span></span>
+      <span class="ln"><span>그 사이에 놓치고 있던 연결</span></span>
+    </h2>
+    <p class="abs b-md" style="left:196px;top:420px;width:739px" data-r="up" data-d="300">인터뷰어는 충동행동 대신 다른 행동을 하고 싶지만, 감정의 시작 원인과 대체 행동을 찾기 어려워했습니다. 페르소나의 상황과 필요로 구체화해 감정과 행동 사이의 개입 지점을 살펴보았습니다. 감정과 충동을 확인하고, 실천할 수 있는 대안을 선택하도록 돕는 과정이 필요했습니다.</p>
+    <p class="abs" style="left:196px;top:521.48px;font-size:17px;font-weight:500;line-height:1.5;letter-spacing:-0.17px;color:var(--gray-2);white-space:pre" data-r="up" data-d="400">Period  2026.09.24 - 2026.09.27  Interviewer 26~37세 스마트 워치 사용자 중 충동 유형이 서로 다른 4인</p>
+
+    <div data-stagger="140">
+      <article class="needs" style="left:200px" data-r="left" data-pair="0">
+        <p class="needs__lbl">Needs</p>
+        <p class="needs__t t-sm">현재 나의<br />감정 상태를 알고 싶다</p>
+        <p class="needs__q">“친구의 좋은 상황을 보면 부럽고 조급한 마음이 들어 충동 소비하게 돼요.”</p>
+        <p class="needs__q">“반복되는 요청과 힘든 업무로 순간적으로 메시지를 보내고, 이후 쇼핑을 해요.”</p>
+      </article>
+      <article class="needs" style="left:593px" data-r="left" data-pair="1">
+        <p class="needs__lbl">Needs</p>
+        <p class="needs__t t-sm">감정과 행동의 연결,<br />관계를 알고 싶다</p>
+        <p class="needs__q">“비교하며 복잡한 감정에 충동구매를 해요. 왜 소비로 이어지는지 모르겠어요.”</p>
+        <p class="needs__q">“화나면 바로 답장하거나 쇼핑해요.<br />왜 반복하는지 모르겠어요</p>
+      </article>
+      <article class="needs" style="left:986px" data-r="left" data-pair="2">
+        <p class="needs__lbl">Needs</p>
+        <p class="needs__t t-sm">충동 행동이 아닌<br />다른 행동을 하고 싶다</p>
+        <p class="needs__q">“충동구매하는 대신 가볍게 기분을<br />전환할 방법을 추천받고 싶어요.”</p>
+        <p class="needs__q">“바로 답장하기보다 잠깐 진정할<br />방법을 추천받고 싶어요.”</p>
+      </article>
+      <article class="needs" style="left:1379px" data-r="left" data-pair="3">
+        <p class="needs__lbl">Needs</p>
+        <p class="needs__t t-sm">가벼운 대안과 그 뒤의 변화를 알고 싶다</p>
+        <p class="needs__q">“기분 전환 방법을 추천받고, 감정이<br />어떻게 달라졌는지도 확인하고 싶어요.”</p>
+        <p class="needs__q">“상황에 맞는 가벼운 대안과 실천<br />이후의 감정 변화 확인이 필요해요.”</p>
+      </article>
+    </div>
+
+    <div data-stagger="140" data-base="560">
+      <div class="connector" style="left:368px" data-r="drop"><img src="assets/connector.svg" alt="" /></div>
+      <div class="connector" style="left:760px" data-r="drop"><img src="assets/connector.svg" alt="" /></div>
+      <div class="connector" style="left:1158px" data-r="drop"><img src="assets/connector.svg" alt="" /></div>
+      <div class="connector" style="left:1546px" data-r="drop"><img src="assets/connector.svg" alt="" /></div>
+    </div>
+
+    <div data-stagger="140" data-base="900">
+      <article class="insight" style="left:200px" data-r="left" data-pair="0"><p class="needs__lbl">Insight</p><p class="needs__t t-sm">충동 행동은 저마다<br />다른 복합감정의 반응</p></article>
+      <article class="insight" style="left:593px" data-r="left" data-pair="1"><p class="needs__lbl">Insight</p><p class="needs__t t-sm">단순한 해결을 넘어<br />반복되는 패턴의 발견</p></article>
+      <article class="insight" style="left:986px" data-r="left" data-pair="2"><p class="needs__lbl">Insight</p><p class="needs__t t-sm">충동 행동 전, 감정과<br />행동 사이의 틈 형성</p></article>
+      <article class="insight" style="left:1379px" data-r="left" data-pair="3"><p class="needs__lbl">Insight</p><p class="needs__t t-sm">맞춤형 대안 제시와<br />실제 변화 확인</p></article>
+    </div>
+
+    <div class="abs" style="left:-6px;top:1455px;width:1926px;height:992px;background:linear-gradient(180deg, rgb(245 245 245 / 0) 7.73%, rgb(231 246 245 / 0.984) 56.9%, #e7f6f5 62.45%, #d9f8f6 100%)"></div>
+    <div class="abs" style="left:0;top:1719px;width:1920px;height:762px" data-depth-scroll="-0.1"><img src="assets/arc.svg" alt="" style="width:1920px;height:762px" /></div>
+
+    <div data-stagger="90">
+      <div class="key-dot" style="top:1807px;--k:0" data-r="pop"><img src="assets/dot-a.svg" alt="" /></div>
+      <div class="key-dot" style="top:1847px;--k:1" data-r="pop"><img src="assets/dot-a.svg" alt="" /></div>
+      <div class="key-dot" style="top:1887px;--k:2" data-r="pop"><img src="assets/dot-a.svg" alt="" /></div>
+    </div>
+    <p class="abs cap" style="left:919px;top:2027px" data-r="up">Key Insight</p>
+    <p class="abs t-bg key-title" style="left:450px;top:2079px" data-r="blur" data-d="150">복합 감정을 이해하고 관리하는 새로운 감정 관리의 경험</p>
+    <p class="abs b-md" style="left:551px;top:2153px;white-space:nowrap" data-r="up" data-d="300">복합적으로 변화하는 감정을 초기에 인식하고, 행동으로 이어지기 전 스스로 개입할 수 있는 경험이 필요하다</p>
+    <div data-stagger="90" data-base="400">
+      <div class="key-dot" style="top:2288px;--k:3" data-r="pop"><img src="assets/dot-b.svg" alt="" /></div>
+      <div class="key-dot" style="top:2328px;--k:4" data-r="pop"><img src="assets/dot-b.svg" alt="" /></div>
+      <div class="key-dot" style="top:2368px;--k:5" data-r="pop"><img src="assets/dot-a.svg" alt="" /></div>
+    </div>
+
+    <!-- Persona -->
+    <p class="abs cap" style="left:196px;top:2532px" data-r="up">Persona</p>
+    <h2 class="abs t-bg" style="left:196px;top:2576px" data-r="lines" data-d="100">
+      <span class="ln"><span>저마다 다른 마음과 행동,</span></span>
+      <span class="ln"><span>그 사이에 놓치고 있던 연결</span></span>
+    </h2>
+    <p class="abs b-md" style="left:196px;top:2752px;width:739px" data-r="up" data-d="300">인터뷰어는 충동행동 대신 다른 행동을 하고 싶지만, 감정의 시작 원인과 대체 행동을 찾기 어려워했습니다. 페르소나의 상황과 필요로 구체화해 감정과 행동 사이의 개입 지점을 살펴보았습니다. 감정과 충동을 확인하고, 실천할 수 있는 대안을 선택하도록 돕는 과정이 필요했습니다.</p>
+
+    <!-- Persona boxes enter top → bottom: photo, its profile tag, goals, quote -->
+    <div class="abs persona-photo" data-r="up"><img src="assets/캡스톤/pr1.png" width="373" height="374" alt="페르소나 윤서아" loading="lazy" /></div>
+    <div class="abs profile" data-r="up" data-d="160">
+      <p style="left:33.5px;top:12.5px;font-size:14px;color:var(--gray)">Profile</p>
+      <p style="left:89.5px;top:9.5px;font-size:33px;letter-spacing:0.33px">윤서아</p>
+      <p style="left:183.5px;top:14.5px;font-size:14px;color:#f5f5f5">26세<br />대학원생</p>
+    </div>
+
+    <div class="abs goals" data-r="up" data-d="320">
+      <div class="goals__blk" style="top:57px" data-stagger="110" data-base="560">
+        <p class="chip" data-r="pop">Needs</p>
+        <ul class="goals__list">
+          <li data-r="left">회피와 먹는 행동이 반복되는 순간과 관계를 스스로 알아차리고 싶다.</li>
+          <li data-r="left">충동이 생겼을 때 부담 없이 잠깐 멈출 수 있는 계기가 필요하다.</li>
+          <li data-r="left" style="white-space:nowrap">긴 회복 활동보다 바로 실행할 수 있는 간단한 대처가 필요하다.</li>
+        </ul>
+      </div>
+      <div class="goals__blk" style="top:356px;left:45px" data-stagger="110" data-base="1000">
+        <p class="chip" data-r="pop">Goals</p>
+        <ul class="goals__list">
+          <li data-r="left">부담감을 받을 때 습관적으로 미루거나 먹는 빈도를 줄이고 싶다.</li>
+          <li data-r="left">미루는 행동과 감정의 관계를 이해하고 스스로 조절하고 싶다.</li>
+          <li data-r="left">해야 할 일을 크게 끊지 않으면서 안정적으로 이어가고 싶다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="abs quote" data-r="up" data-d="480">
+      <p class="quote__mark" data-r="pop" data-d="760">❞</p>
+      <p class="quote__txt" data-r="up" data-d="880">할 일이 있는데 자꾸 다른 걸 하게 돼요. 먹을 때는 좀 나은데, 결국 일도 그대로라 더 불안해져요.</p>
+    </div>
+
+    <!-- Persona 2 (Figma 2454:1601–1642): mirrored row — quote left, needs/goals centre, photo right -->
+    <div class="abs quote quote--b" data-r="up">
+      <p class="quote__mark" data-r="pop" data-d="280">❞</p>
+      <p class="quote__txt" data-r="up" data-d="400">계속된 수정 요청에 답답해서 감정을 토로하고 싶지만, 순간적으로 반응하고 나면 결국 후회하게 돼요.</p>
+    </div>
+    <div class="abs goals goals--b" data-r="up" data-d="160">
+      <div class="goals__blk" style="top:57px" data-stagger="110" data-base="400">
+        <p class="chip" data-r="pop">Needs</p>
+        <ul class="goals__list">
+          <li data-r="left">감정이 올라온 순간 바로 행동하기 전에 알아차릴 수 있었으면 한다.</li>
+          <li data-r="left">답장이나 구매를 잠시 미룰 수 있는 짧은 개입이 필요하다.</li>
+          <li data-r="left" style="white-space:nowrap">업무 스트레스와 반복되는 충동 행동의 연결을 확인하고 싶다.</li>
+        </ul>
+      </div>
+      <div class="goals__blk" style="top:356px;left:45px" data-stagger="110" data-base="840">
+        <p class="chip" data-r="pop">Goals</p>
+        <ul class="goals__list">
+          <li data-r="left">감정적인 상황에서 즉각적으로 메시지를 보내는 행동을 줄이고 싶다.</li>
+          <li data-r="left">업무 관계를 해치지 않으면서 자신의 감정을 다루고 싶다.</li>
+          <li data-r="left">감정을 쇼핑으로 해소하는 패턴을 조절하고 싶다.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="abs persona-photo persona-photo--b" data-r="up" data-d="320"><img src="assets/캡스톤/pr2.png" width="373" height="374" alt="페르소나 한재민" loading="lazy" /></div>
+    <div class="abs profile profile--b" data-r="up" data-d="480">
+      <p style="left:33.5px;top:12.5px;font-size:14px;color:var(--gray)">Profile</p>
+      <p style="left:89.5px;top:9.5px;font-size:33px;letter-spacing:0.33px">한재민</p>
+      <p style="left:183.5px;top:14.5px;font-size:14px;color:#f5f5f5">33세<br />프리랜서</p>
+    </div>
+  </section>
+
+  <!-- 7. Core value ───────────────────────────────────────────────────── -->
+  <section class="sec core">
+    <p class="abs t-sm" style="left:279px;top:102px;white-space:nowrap" data-r="up">Core value</p>
+    <p class="abs b-md-k" style="left:604px;top:102px;width:1048px" data-r="up" data-d="150">건강하고 에너지를 담은 터콰이즈 색상을 통해 emora의 톤과 무드를 담았습니다. 설정한 emora 터콰이즈는 이모라가 개입한 ‘틈’을 상징하며, 사용자가 잠시 자신의 감정을 돌아보고 돌보는 순간을 시각적으로 나타냅니다.</p>
+
+    <div class="abs core__img" data-r="clip"><img src="assets/캡스톤/3.png" width="1919" height="479" alt="스마트워치를 확인하는 손" loading="lazy" /></div>
+    <div class="abs core__line" style="left:707px" data-r="drop" data-d="600"><img src="assets/core-line1.svg" alt="" /></div>
+    <div class="abs core__line" style="left:1213px" data-r="drop" data-d="700"><img src="assets/core-line2.svg" alt="" /></div>
+
+    <!-- Keywords enter left → right; the gradient layer over the photo follows the last one (CSS :has) -->
+    <div class="abs value" style="left:463px" data-r="lines" data-d="400"><p class="ln value__ko"><span>시각화된</span></p><p class="ln value__en t-hero"><span>Visualized</span></p></div>
+    <div class="abs value" style="left:960px" data-r="lines" data-d="560"><p class="ln value__ko"><span>즉각적인</span></p><p class="ln value__en t-hero"><span>Immediate</span></p></div>
+    <div class="abs value" style="left:1460px" data-r="lines" data-d="720"><p class="ln value__ko"><span>개인화된</span></p><p class="ln value__en t-hero"><span>Personalized</span></p></div>
+  </section>
+
+  <!-- 8. Function flow ────────────────────────────────────────────────── -->
+  <section class="sec flow" data-flow>
+    <p class="abs t-sm" style="left:279px;top:102px;white-space:nowrap" data-r="up">Function flow</p>
+    <p class="abs b-md-k" style="left:605px;top:102px;width:1048px" data-r="up" data-d="150">워치가 감정 변화를 감지하면, emora는 감정을 확인하고 회복 행동을 제안합니다. 회복 이후의 변화는 기록으로 관리되고, 서로의 경험을 나누며 다음 틈으로 이어집니다.</p>
+
+    <!-- Scroll track: both panels stay pinned while the page scrolls through the five steps.
+         Each step's visual lives in .flow__vis[data-step]; drop an <img> into an empty one when its photo is ready. -->
+    <div class="abs flow__track">
+      <div class="flow__pin" data-flow-pin>
+        <div class="abs food" data-r="clip">
+          <div class="flow__vis flow__vis--empty" data-step="0"><p class="flow__vis-n">01</p><p class="flow__vis-t">Detect</p><p class="flow__vis-d">워치가 생체 신호의 변화를 감지합니다</p></div>
+          <div class="flow__vis flow__vis--empty" data-step="1"><p class="flow__vis-n">02</p><p class="flow__vis-t">Check</p><p class="flow__vis-d">감정과 충동의 크기를 확인합니다</p></div>
+          <div class="flow__vis" data-step="2"><img src="assets/flow-food.png" alt="추천 식단 목록 화면" loading="lazy" /></div>
+          <div class="flow__vis flow__vis--empty" data-step="3"><p class="flow__vis-n">04</p><p class="flow__vis-t">Manage</p><p class="flow__vis-d">기록으로 변화와 패턴을 돌아봅니다</p></div>
+          <div class="flow__vis flow__vis--empty" data-step="4"><p class="flow__vis-n">05</p><p class="flow__vis-t">Share</p><p class="flow__vis-d">서로의 경험과 응원을 나눕니다</p></div>
+        </div>
+        <div class="abs wheel-panel" data-r="clip" data-d="150" data-wheel>
+          <span class="wheel__arrow t-hero" aria-hidden="true">→</span>
+          <div class="wheel">
+        <ul class="wheel__list" role="tablist" aria-label="emora 기능 흐름">
+          <li><button class="t-hero" role="tab" aria-label="Detect — 워치가 생체 신호의 변화를 감지합니다">Detect</button></li>
+          <li><button class="t-hero" role="tab" aria-label="Check — 감정과 충동의 크기를 확인합니다">Check</button></li>
+          <li><button class="t-hero" role="tab" aria-label="Recover — 짧은 회복 행동으로 틈을 만듭니다">Recover</button></li>
+          <li><button class="t-hero" role="tab" aria-label="Manage — 기록으로 변화와 패턴을 돌아봅니다">Manage</button></li>
+          <li><button class="t-hero" role="tab" aria-label="Share — 서로의 경험과 응원을 나눕니다">Share</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Video slot ───────────────────────────────────────────────────── -->
+  <section class="sec video-sec">
+    <div class="abs video" data-r="scale">
+      <div class="video__orb" style="left:-80px;top:-120px"><img src="assets/mf-g36.svg" alt="" /></div>
+      <div class="video__orb" style="right:-60px;bottom:-160px;left:auto"><img src="assets/mf-g38.svg" alt="" style="animation-direction:reverse" /></div>
+      <button class="video__play" type="button" aria-label="emora 영상 재생" data-video>
+        <svg width="34" height="40" viewBox="0 0 34 40" aria-hidden="true"><path d="M34 20 0 40V0z" fill="#07a095" /></svg>
+      </button>
+      <div class="video__label"><p>EMORA FILM</p><p>감정과 행동 사이, 작은 틈</p></div>
+    </div>
+  </section>
+
+  <!-- 10. Brand ───────────────────────────────────────────────────────── -->
+  <section class="sec brand">
+    <div class="abs brand__top"></div>
+    <div class="abs brand__logo" data-r="wipe"><img src="assets/brand-logo.svg" alt="emora" /></div>
+    <p class="abs t-sm" style="left:279px;top:591px;white-space:nowrap" data-r="up">Brand Color</p>
+    <p class="abs b-md-k" style="left:672px;top:591px;width:969px" data-r="up" data-d="150">겹쳐도 비치는 유리와 번지는 그라데이션이 자연스레 겹치고 합쳐지며 감정이 쌓이고 풀리는 과정을 부드럽고 투명한 질감으로 표현합니다. 빛의 굴절과 색의 중첩은 감정의 깊이를 더하고, 유연한 흐름과 은은한 변화로 마음이 움직이는 순간을 시각적으로 더욱 섬세하게 전달합니다.</p>
+    <div data-swatches></div>
+  </section>
+
+  <!-- 11. Design concept ──────────────────────────────────────────────── -->
+  <section class="sec concept">
+    <p class="abs cap" style="left:200px;top:200px" data-r="up">Design Concept</p>
+    <h2 class="abs t-bg" style="left:200px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>감정처럼 흐르고,</span></span>
+      <span class="ln"><span>유리처럼 투명하게</span></span>
+    </h2>
+    <p class="abs b-md" style="left:199px;top:420px;width:735px" data-r="up" data-d="300">겹쳐도 비치는 유리와 번지는 그라데이션이 자연스레 겹치고 합쳐지며 감정이 쌓이고 풀리는<br />과정을 부드럽고 투명한 질감으로 표현합니다. 빛의 굴절과 색의 중첩은 감정의 깊이를 더하고,<br />유연한 흐름과 은은한 변화로 마음이 움직이는 순간을 시각적으로 더욱 섬세하게 전달합니다.</p>
+
+    <!-- Bands alternate direction: sideways → downward → sideways -->
+    <div class="band" style="top:655px" data-band data-r="wipe">
+      <p class="band__num"><span>01</span><span>Glass</span></p>
+      <p class="band__word" data-r="fade" data-shift="-1"><span>Flexible</span></p>
+      <p class="band__desc t-md" data-shift="1">감정에 따라 농도와 두께가 변하는 레이어</p>
+      <p class="band__sub" data-shift="1">유연한</p>
+    </div>
+    <div class="band" style="top:965px" data-band data-r="curtain" data-d="250">
+      <p class="band__num"><span>02</span><span>Color · Soft UI · Gradient</span></p>
+      <p class="band__word" data-r="fade" data-shift="-1"><span>Soft</span></p>
+      <p class="band__desc t-md" data-shift="1">글래스모피즘과 둥근 모서리, 낮은 대비의 경계</p>
+      <p class="band__sub" data-shift="1">부드러운</p>
+    </div>
+    <div class="band" style="top:1275px" data-band data-r="wipe" data-d="500">
+      <p class="band__num"><span>03</span><span>Layer · Flow</span></p>
+      <p class="band__word" data-r="fade" data-shift="-1"><span>Connected</span></p>
+      <p class="band__desc t-md" data-shift="1">카드 단위 정보가 하나의 흐름으로 이어지는 화면</p>
+      <p class="band__sub" data-shift="1">연결된</p>
+    </div>
+  </section>
+
+  <!-- 12. Step 1: color system ────────────────────────────────────────── -->
+  <section class="sec step1" data-shuffle>
+    <p class="abs cap" style="left:960px;top:200px;translate:-50% 0" data-r="up">Step 1</p>
+    <h2 class="abs t-bg" style="left:960px;top:244px;translate:-50% 0;text-align:center" data-r="lines" data-d="100">
+      <span class="ln"><span>감정의 변화에 따라</span></span>
+      <span class="ln"><span>달라지는 색상 체계</span></span>
+    </h2>
+    <p class="abs b-md" style="left:960px;top:420px;width:735px;translate:-50% 0;text-align:center" data-r="up" data-d="300">emora는 감정의 흐름을 색상과 형태로 표현해 다양한 복합 감정의 경험을 제공합니다. 사용자는 정해진 색상에 감정을 고정하지 않고, 감정의 강도와 변화 양상에 따라 다채롭게 변화하는 시각 요소를 통해 자신의 감정을 자유롭게 탐색하고 새로운 방식으로 이해할 수 있도록 합니다.</p>
+    <div class="abs step1__bg"></div>
+
+    <div class="abs" style="left:200px;top:611px" data-depth-scroll="0.12">
+      <!-- Ref. 동영상1: each card deals in on its own (TL → BR → front), then the three shuffle in rhythm -->
+      <div class="gcard gcard--a" style="position:relative;width:474px;height:597px;border-radius:0 0 38.52px 38.52px;--fx:70px;--fy:70px" data-r="deal">
+        <img src="assets/step1-a.png" alt="" loading="lazy" style="height:179.83%;left:-2.58%;top:-14.85%;width:105.36%" /><div class="gcard__veil"></div>
+      </div>
+    </div>
+    <div class="abs" style="left:1246px;top:1249px" data-depth-scroll="-0.1">
+      <div class="gcard gcard--b" style="position:relative;width:474px;height:556px;border-radius:38.52px 38.52px 0 0;--fx:70px;--fy:70px" data-r="deal" data-d="180">
+        <img src="assets/step1-b.png" alt="" loading="lazy" style="height:216.47%;left:-8.17%;top:-24.31%;width:116.47%" /><div class="gcard__veil"></div>
+      </div>
+    </div>
+    <div class="abs" style="left:634px;top:795px">
+      <div class="gcard gcard--c" style="position:relative;width:652px;height:826px;border-radius:38.52px;--fx:150px;--fy:150px" data-r="deal" data-d="420">
+        <img src="assets/step1-c.png" alt="반복되는 감정을 표현한 그라데이션" loading="lazy" style="height:207.54%;left:-19.9%;top:-23.57%;width:119.9%" />
+        <!-- Colour layers over the photo (blend: hue) — the emotion palette shifts, the photo itself is untouched -->
+        <div class="gcard__hue gcard__hue--a"></div><div class="gcard__hue gcard__hue--b"></div>
+      </div>
+    </div>
+    <p class="abs b-md" style="left:1320px;top:795px" data-r="up" data-d="500">반복</p>
+    <p class="abs t-md" style="left:1320px;top:825px;color:var(--teal-hover)" data-r="up" data-d="600">Repeat</p>
+    <p class="abs b-md" style="left:1320px;top:884px;width:224px" data-r="up" data-d="700">같은 감정이 다시 나타났을 때</p>
+  </section>
+
+  <!-- 13. Emotion color ───────────────────────────────────────────────── -->
+  <section class="sec colors">
+    <div class="abs colors__left"><div class="colors__tint" data-tint></div><div class="colors__tint" data-tint></div></div>
+    <div class="abs picker" data-r="scale" data-picker>
+      <p class="picker__t">색상 선택</p>
+      <button class="sw" type="button" style="left:25.97px;top:89.6px" data-c="#FDFDA3" aria-label="노랑" aria-pressed="false"><img src="assets/cc-292.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:109.08px;top:89.6px" data-c="#D6F8A4" aria-label="연두" aria-pressed="false"><img src="assets/cc-293.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:192.18px;top:89.6px" data-c="#BEF6CA" aria-label="민트" aria-pressed="false"><img src="assets/cc-294.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:275.28px;top:89.6px" data-c="#ABEDF5" aria-label="하늘" aria-pressed="true"><img src="assets/cc-295.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:358.39px;top:89.6px" data-c="#C6ACFA" aria-label="보라" aria-pressed="false"><img src="assets/cc-297.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:441.49px;top:89.6px" data-c="#FFB89E" aria-label="주황" aria-pressed="false"><img src="assets/cc-299.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:25.97px;top:172.7px" data-c="#98C9F9" aria-label="파랑" aria-pressed="false"><img src="assets/cc-296.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:109.08px;top:172.7px" data-c="#FBB7C3" aria-label="분홍" aria-pressed="false"><img src="assets/cc-298.svg" alt="" /></button>
+      <button class="sw" type="button" style="left:192.18px;top:172.7px" data-c="#FFFFFF" aria-label="흰색" aria-pressed="false"><img src="assets/cc-300.png" alt="" /></button>
+      <button class="save" type="button" data-save>변경 사항 저장</button>
+    </div>
+    <p class="abs b-md colors__cap" style="left:466px" data-r="up">user<br />custom color</p>
+
+    <div class="abs wheel-glow" data-glow></div>
+    <div data-emo-wheel>
+      <div class="emo" style="left:1389px;top:158px" data-c="#FDFDA3"><span class="emo__dot"><img src="assets/wheel-joy.svg" alt="" /></span><span class="emo__lbl"><b>Joy</b><span>기쁨</span></span></div>
+      <div class="emo" style="left:1570px;top:251px" data-c="#D6F8A4"><span class="emo__dot"><img src="assets/wheel-trust.svg" alt="" /></span><span class="emo__lbl"><b>Truth</b><span>신뢰</span></span></div>
+      <div class="emo" style="left:1660px;top:428px" data-c="#BEF6CA"><span class="emo__dot"><img src="assets/wheel-fear.svg" alt="" /></span><span class="emo__lbl"><b>Fear</b><span>두려움</span></span></div>
+      <div class="emo" style="left:1570px;top:605px" data-c="#ABEDF5"><span class="emo__dot"><img src="assets/wheel-surprise.svg" alt="" /></span><span class="emo__lbl"><b>Surprise</b><span>놀람</span></span></div>
+      <div class="emo" style="left:1389px;top:695px" data-c="#98C9F9"><span class="emo__dot"><img src="assets/wheel-sadness.svg" alt="" /></span><span class="emo__lbl"><b>Sadness</b><span>슬픔</span></span></div>
+      <div class="emo" style="left:1208px;top:605px" data-c="#C6ACFA"><span class="emo__dot"><img src="assets/wheel-disgust.svg" alt="" /></span><span class="emo__lbl"><b>Disgust</b><span>역겨움</span></span></div>
+      <div class="emo" style="left:1128px;top:428px" data-c="#F98BA0"><span class="emo__dot"><img src="assets/wheel-anger.svg" alt="" /></span><span class="emo__lbl"><b>Anger</b><span>화</span></span></div>
+      <div class="emo" style="left:1208px;top:251px" data-c="#FFB89E"><span class="emo__dot"><img src="assets/wheel-anticipation.svg" alt="" /></span><span class="emo__lbl"><b>Anticipation</b><span>기대</span></span></div>
+    </div>
+    <p class="abs b-md colors__cap" style="left:1417.5px" data-r="up" data-d="200">emora<br />emotion color</p>
+  </section>
+
+  <!-- 14. Step 2: check system ────────────────────────────────────────── -->
+  <section class="sec step2">
+    <p class="abs cap" style="left:200px;top:200px" data-r="up">Step 2</p>
+    <h2 class="abs t-bg" style="left:200px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>감정 상태를 확인하고</span></span>
+      <span class="ln"><span>충동을 점검하는 체크 시스템</span></span>
+    </h2>
+    <p class="abs b-md" style="left:200px;top:420px;width:735px" data-r="up" data-d="300">사용자는 현재 느끼는 감정과 감정의 강도, 충동이 나타나는 상황과 충동의 크기를 순서대로<br />선택합니다. 이를 통해 자신의 감정 상태를 구체적으로 확인하고, 감정과 충동 행동 사이의<br />연결을 파악해 현재 상태에 맞는 대응 방향을 찾을 수 있도록 합니다.</p>
+
+    <!-- Sensing -->
+    <div class="panel" style="left:200px;top:649px;width:604px;height:500px;background:var(--bg-light-gray)" data-r="clip">
+      <div class="pulse" data-r="fade" data-d="400"></div>
+      <!-- Prototype: the PNG stays as the screen; live buttons sit exactly on its baked ones (native 396×484 coords) -->
+      <div class="abs proto" style="left:131px;top:41px;width:342px;height:418px;border-radius:20px" data-r="up" data-d="300">
+        <img src="assets/s2-sensing.png" alt="감정 확인 알림 화면" loading="lazy" style="width:342px;height:418px" />
+        <div class="proto__ui" style="width:396px;height:484px;--kx:0.8636;--ky:0.8636" role="group" aria-label="감정 확인 응답" data-choice>
+          <button class="sense-btn" type="button" style="top:280px" aria-pressed="false">맞아요</button>
+          <button class="sense-btn" type="button" style="top:376px" aria-pressed="false">다른 감정 느껴요</button>
+        </div>
+      </div>
+    </div>
+    <p class="abs t-hero" style="left:854px;top:994px" data-r="up" data-d="200">Sensing</p>
+    <p class="abs b-md" style="left:854px;top:1089px;width:604px" data-r="up" data-d="350">사용자는 생체 신호의 변화를 감지하고, 평소와 다른 흐름이 나타나면 알림을<br />통해 현재 감정 상태를 확인합니다. 이를 통해 감정 변화의 시작을 인지합니다.</p>
+
+    <!-- Check -->
+    <div class="panel" style="left:854px;top:1221px;width:866px;height:500px;background:var(--bg-light-gray)" data-r="clip">
+      <!-- Prototype: title from the PNG; intensity boxes, chip and counter are live (native 724×349 coords) -->
+      <div class="abs proto" style="left:147px;top:112px;width:572px;height:276px" data-r="wipe" data-d="400">
+        <img src="assets/s2-check.png" alt="슬픔의 크기를 선택하는 화면" loading="lazy" style="width:572px;height:276px;object-fit:cover" />
+        <div class="proto__ui lv" style="width:724px;height:349px;--kx:0.7901;--ky:0.7908" data-intensity data-emotion="슬픔">
+          <div class="lv__cover"></div>
+          <div role="radiogroup" aria-label="슬픔의 크기">
+            <button class="lv__box" type="button" role="radio" style="left:0" aria-checked="false"><span>1</span></button>
+            <button class="lv__box" type="button" role="radio" style="left:150px" aria-checked="true"><span>2</span></button>
+            <button class="lv__box" type="button" role="radio" style="left:300px" aria-checked="false"><span>3</span></button>
+            <button class="lv__box" type="button" role="radio" style="left:449px" aria-checked="false"><span>4</span></button>
+            <button class="lv__box" type="button" role="radio" style="left:599px" aria-checked="false"><span>5</span></button>
+          </div>
+          <p class="lv__chip" aria-live="polite"><span data-lv-chip>슬픔 2</span></p>
+          <p class="lv__count"><span data-lv-count>2</span> / 5 선택</p>
+        </div>
+      </div>
+    </div>
+    <p class="abs t-hero" style="left:200px;top:1566px" data-r="up" data-d="200">Check</p>
+    <p class="abs b-md" style="left:200px;top:1661px;width:604px" data-r="up" data-d="350">사용자는 현재 감정과 강도, 충동이 나타나는 상황과 크기를 순서대로 선택해 상태를 확인합니다.</p>
+
+    <!-- Result -->
+    <div class="panel" style="left:200px;top:1793px;width:604px;height:700px;background:linear-gradient(180deg, var(--teal) 9.615%, rgb(241 241 241 / 0))" data-r="clip">
+      <!-- Auto-playing app flow: home → emotions → intensity → situation (each screen = its PNG + live controls
+           in native 402×874 coords, same scale as img.crop). Without JS the last screen shows, as before. -->
+      <div class="abs phone" data-r="up" data-d="400" data-phone>
+        <div class="phone__ui" data-screen="home">
+          <img class="crop" src="assets/s2-phone-1.png" alt="emora 홈 화면" loading="lazy" />
+        </div>
+        <div class="phone__ui" data-screen="emotion">
+          <img class="crop" src="assets/s2-phone-2.png" alt="감정 선택 화면" loading="lazy" />
+          <div class="proto__ui" style="width:402px;height:874px;--kx:0.9978;--ky:1.0016" role="group" aria-label="현재 가까운 감정 선택">
+            <button class="sit" type="button" style="top:207px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>즐거움</button>
+            <button class="sit" type="button" style="top:267px" aria-pressed="true"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>슬픔</button>
+            <button class="sit" type="button" style="top:327px" aria-pressed="true"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>두려움</button>
+            <button class="sit" type="button" style="top:387px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>놀람</button>
+            <button class="sit" type="button" style="top:447px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>신뢰</button>
+            <button class="sit" type="button" style="top:507px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>역겨움</button>
+            <button class="sit" type="button" style="top:567px" aria-pressed="true"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>화</button>
+          </div>
+        </div>
+        <div class="phone__ui" data-screen="intensity">
+          <img class="crop" src="assets/s2-phone-3.png" alt="슬픔의 크기 선택 화면" loading="lazy" />
+          <div class="proto__ui lv lv--sm" style="width:402px;height:874px;--kx:0.9978;--ky:1.0016" data-intensity data-emotion="슬픔">
+            <div class="lv__cover"></div>
+            <div role="radiogroup" aria-label="슬픔의 크기">
+              <button class="lv__box" type="button" role="radio" style="left:20px" aria-checked="false"><span>1</span></button>
+              <button class="lv__box" type="button" role="radio" style="left:95px" aria-checked="true"><span>2</span></button>
+              <button class="lv__box" type="button" role="radio" style="left:170px" aria-checked="false"><span>3</span></button>
+              <button class="lv__box" type="button" role="radio" style="left:245px" aria-checked="false"><span>4</span></button>
+              <button class="lv__box" type="button" role="radio" style="left:320px" aria-checked="false"><span>5</span></button>
+            </div>
+            <p class="lv__chip"><span data-lv-chip>슬픔 2</span></p>
+            <p class="lv__count"><span data-lv-count>2</span> / 5 선택</p>
+          </div>
+        </div>
+        <div class="phone__ui is-on" data-screen="situation">
+          <img class="crop" src="assets/s2-phone-4.png" alt="상황 선택 화면" loading="lazy" />
+          <div class="proto__ui" style="width:402px;height:874px;--kx:0.9978;--ky:1.0016" role="group" aria-label="현재 상황 선택" data-situation>
+            <button class="sit" type="button" style="top:207px" aria-pressed="true"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>대인관계</button>
+            <button class="sit" type="button" style="top:267px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>업무/과제</button>
+            <button class="sit" type="button" style="top:327px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>마감 기간</button>
+            <button class="sit" type="button" style="top:387px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>공복 상태</button>
+            <button class="sit" type="button" style="top:447px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>개인적인 일</button>
+            <button class="sit" type="button" style="top:507px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>특별한 이유 없이</button>
+            <button class="sit" type="button" style="top:567px" aria-pressed="false"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="11" /><path pathLength="1" d="M6.1 11.4l3.3 3.2 6.5-6.7" /></svg>모름</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel" style="left:854px;top:1793px;width:866px;height:700px;background:linear-gradient(180deg, var(--bg-light-gray), #fff)" data-r="clip" data-d="150">
+      <img class="abs" src="assets/s2-result.png" alt="감정 결과 화면" loading="lazy" style="left:157px;top:168px;width:551px;height:364px;object-fit:cover" data-r="wipe" data-d="500" />
+    </div>
+    <p class="abs t-hero" style="left:854px;top:2521px" data-r="up" data-d="200">Result</p>
+    <p class="abs b-md" style="left:854px;top:2616px;width:604px" data-r="up" data-d="350">사용자는 현재 감정과 강도, 충동이 나타나는 상황과 크기를 순서대로 선택해 상태를 확인합니다.</p>
+  </section>
+
+  <!-- 15. Care ────────────────────────────────────────────────────────── -->
+  <section class="sec care">
+    <p class="abs cap" style="left:200px;top:200px" data-r="up">Care</p>
+    <h2 class="abs t-bg" style="left:200px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>지금 이 순간</span></span>
+      <span class="ln"><span>나에게 필요한 케어</span></span>
+    </h2>
+    <p class="abs b-md" style="left:203px;top:408px;width:735px" data-r="up" data-d="300">emora는 현재의 감정과 신체 신호를 바탕으로, 지금의 상태에 필요한 케어를 제안합니다. 짧은 호흡과 가벼운 움직임처럼 부담 없이 실천할 수 있는 행동을 통해 바쁜 일상 속에 잠시 멈춰 나를 돌아볼 수 있는 ‘틈’을 만들고, 흐트러진 마음의 리듬을 천천히 정돈할 수 있도록 돕습니다.</p>
+
+    <div class="abs walk" data-r="scale" data-d="100">
+      <img src="assets/care-walk-bg.png" alt="" loading="lazy" style="height:140.7%;left:0.08%;top:-34.4%;width:100%" />
+      <div class="abs" style="inset:0;background:rgb(63 63 63 / 0.2)"></div>
+      <img src="assets/care-walk-fg.png" alt="제자리 걸음 케어" loading="lazy" style="inset:0;width:100%;height:100%;object-fit:cover" />
+      <div class="walk__fade"></div>
+      <p class="walk__t">제자리 걸음 <span data-count="50">0</span>회</p>
+      <p class="walk__time">14 : 55</p>
+    </div>
+    <div class="abs level" data-r="scale" data-d="250">
+      <p style="left:66.63px;top:26.66px;font-size:24.231px;font-weight:500;line-height:1.4;color:rgb(0 0 0 / 0.8)">30초</p>
+      <div class="level__dots" data-stagger="90" data-base="700"><i data-r="pop"></i><i data-r="pop"></i><i data-r="pop"></i></div>
+      <p style="left:64.21px;top:111.46px;font-size:31.5px;font-weight:600;line-height:1.4;color:rgb(0 0 0 / 0.8)">쉬움</p>
+    </div>
+
+    <button class="abs timer" type="button" data-r="scale" data-timer aria-label="30초 케어 타이머, 누르면 일시정지/재생">
+      <span class="abs" style="left:46.8px;top:34.14px;font-size:17.473px;font-weight:500;line-height:1.5;color:var(--gray)">타이머</span>
+      <span class="timer__core"><img src="assets/timer-core.svg" alt="" /></span>
+      <span class="timer__ring"><img src="assets/timer-ring.svg" alt="" /></span>
+      <span class="timer__time" data-time>00:30</span>
+      <span class="timer__sub" data-timer-sub>남은 시간</span>
+    </button>
+
+    <div class="abs fabric" data-r="clip"><img src="assets/care-fabric.png" alt="바람에 흩날리는 천" loading="lazy" /></div>
+
+    <h2 class="abs t-bg" style="left:1288px;top:1336px" data-r="lines">
+      <span class="ln"><span>지금 이 순간</span></span>
+      <span class="ln"><span>나에게 필요한 케어</span></span>
+    </h2>
+    <div class="abs mphone-bg" data-r="fade"></div>
+    <div class="abs mphone" data-r="up" data-d="200">
+      <img src="assets/care-phone.png" alt="모바일 케어 기대 효과 화면" loading="lazy" />
+      <!-- Live status bars over the PNG's columns (native 768×1792 coords, same scale/offset as the img).
+           --to is the design value (px of bar height); --peak is the level before care. -->
+      <div class="proto__ui care-bars" style="left:-10.55px;top:-579.6px;width:768px;height:1792px;--kx:0.7592;--ky:0.7592" data-care-bars>
+        <div class="cbar" style="left:84px;width:169px;--to:114;--peak:196" role="meter" aria-label="스트레스" aria-valuemin="0" aria-valuemax="100" aria-valuenow="36"><i></i></div>
+        <div class="cbar" style="left:301px;width:169px;--to:220;--peak:236" role="meter" aria-label="우울" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><i></i></div>
+        <div class="cbar" style="left:517px;width:171px;--to:92;--peak:56" role="meter" aria-label="피로" aria-valuemin="0" aria-valuemax="100" aria-valuenow="29"><i></i></div>
+      </div>
+    </div>
+    <p class="abs b-md" style="left:1292px;top:2376px;white-space:nowrap" data-r="up">모바일 케어</p>
+  </section>
+
+  <!-- 16. Archive ─────────────────────────────────────────────────────── -->
+  <section class="sec archive">
+    <p class="abs cap" style="left:203px;top:200px" data-r="up">Archive</p>
+    <h2 class="abs t-bg" style="left:203px;top:244px" data-r="lines" data-d="100">
+      <span class="ln"><span>매일의 감정을 모아</span></span>
+      <span class="ln"><span>나를 이해하기</span></span>
+    </h2>
+    <p class="abs b-md" style="left:203px;top:408px;width:735px" data-r="up" data-d="300">emora는 하루 동안 느낀 감정과 생체 신호를 시간순으로 기록하고, 일주일 동안 쌓인 기록을<br />바탕으로 반복되는 감정과 변화의 흐름을 한눈에 확인할 수 있습니다. 지나가기 쉬운 감정의<br />순간을 차곡차곡 남겨, 나의 상태가 어떻게 이어지고 있는지 돌아볼 수 있도록 합니다.</p>
+
+    <div class="panel" style="left:200px;top:617px;width:786px;height:844px;background:var(--bg-light-gray)" data-r="clip"></div>
+    <div class="abs arch-phone" data-r="up" data-d="300">
+      <img src="assets/arch-phone.png" alt="아카이브 일간 화면" loading="lazy" />
+      <!-- 10월 3주 (ref. 동영상3): the PNG is the daily list; the toggle and the weekly / today views are live HTML.
+           Views are laid out in the reference's 336pt grid and scaled to this frame (0.95). -->
+      <div class="week" data-week data-view="list" aria-live="polite">
+        <svg class="week__back" viewBox="0 0 12 20" aria-hidden="true"><path d="M10 2 2 10l8 8" /></svg>
+        <div class="week__toggle" role="tablist" aria-label="기간">
+          <i class="week__thumb"></i>
+          <span role="tab" aria-selected="true">일간</span><span role="tab" aria-selected="false">주간</span>
+        </div>
+        <div class="wv">
+          <div class="wv__grid">
+            <!-- 주간 -->
+            <div class="wv__view" data-for="week">
+              <div class="wv__insight"><p class="wv__time">12:00 ~ 14:30</p><p class="wv__title">슬픔과 화가 함께 나타나는 패턴이 있어요.</p><p class="wv__desc">업무/과제와 대인관계에서 감정 영향을 많이 받았어요.<br />다음 주에는 도움이 되었던 케어를 통해 마음을 돌봐요.</p></div>
+              <div class="wv__card">
+                <p class="wv__h" style="top:20px">이번 주 감정</p>
+                <i class="wv__bar" style="left:17px;--h:118px;--i:0;background-image:linear-gradient(180deg,#f98ba0 0%,#c6acfa 23.077%,#fff 35.577%,#fff 40.865%,#fdfda3 61.058%,#abedf5 75.962%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar" style="left:56px;--h:118px;--i:1;background-image:linear-gradient(180deg,#98c9f9 0%,#d6f8a4 24.038%,#f98ba0 39.137%,#fff 52.885%,#fff 60.577%,#d6f8a4 64.423%,#fdfda3 72.596%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar" style="left:97px;--h:118px;--i:2;background-image:linear-gradient(180deg,#f98ba0 0%,#c6acfa 18.269%,#fff 27.885%,#fff 30.769%,#b6b6fa 39.904%,#ffb89e 50%,#98c9f9 62.981%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar" style="left:138px;--h:118px;--i:3;background-image:linear-gradient(180deg,#98c9f9 0%,#fff 18.75%,#fff 22.596%,#98c9f9 39.904%,#c6acfa 52.404%,#fff 63.462%,#c6acfa 70.673%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar" style="left:177px;--h:118px;--i:4;background-image:linear-gradient(180deg,#c6acfa 0%,#fff 18.269%,#f98ba0 36.058%,#fff 48.077%,#bef6ca 58.654%,#98c9f9 75.481%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar" style="left:219.5px;--h:118px;--i:5;background-image:linear-gradient(180deg,#98c9f9 0%,#fff 27.885%,#fdfda3 37.5%,#c6acfa 56.731%,#ffb89e 68.269%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar" style="left:262px;--h:118px;--i:6;background-image:linear-gradient(180deg,#f98ba0 0%,#c6acfa 25.962%,#fff 36.538%,#98c9f9 48.558%,#c6acfa 66.827%,#fdfda3 75.481%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__mark" style="left:17px;top:109px"></i><i class="wv__mark" style="left:56px;top:132.5px"></i><i class="wv__mark" style="left:97px;top:95px"></i><i class="wv__mark" style="left:138px;top:83.5px"></i><i class="wv__mark" style="left:138px;top:142.5px"></i><i class="wv__mark" style="left:177px;top:79px"></i><i class="wv__mark" style="left:177px;top:122.5px"></i><i class="wv__mark" style="left:219.5px;top:92.5px"></i><i class="wv__mark" style="left:262px;top:105px"></i>
+                <div class="wv__axis"><i style="left:28px"></i><i style="left:67px"></i><i style="left:108px"></i><i style="left:149px"></i><i style="left:188px"></i><i style="left:230.5px"></i><i style="left:273px"></i></div>
+                <p class="wv__lbl" style="left:28px">일</p><p class="wv__lbl" style="left:67px">월</p><p class="wv__lbl" style="left:108px">화</p><p class="wv__lbl" style="left:149px">수</p><p class="wv__lbl" style="left:188px">목</p><p class="wv__lbl" style="left:230.5px">금</p><p class="wv__lbl" style="left:273px">토</p>
+                <p class="wv__h" style="top:249px">주요 감정 비율</p>
+                <div class="wv__ratio"><i style="flex:93.5;--c:#acc8f0;--n:#e7b6a2"></i><i style="flex:75;--c:#e7b6a2;--n:#da88a1"></i><i style="flex:49;--c:#da88a1;--n:#d8d8d8"></i><i style="flex:44;--c:#d8d8d8"></i></div>
+                <p class="wv__legend"><span style="--c:#acc8f0">슬픔 40%</span><span style="--c:#e7b6a2">기대 30%</span><span style="--c:#da88a1">화 25%</span><span style="--c:#d8d8d8">이 외 25%</span></p>
+              </div>
+            </div>
+            <!-- 일간 (금일) -->
+            <div class="wv__view" data-for="day">
+              <div class="wv__insight"><p class="wv__time">12:40 ~ 18:40</p><p class="wv__title">슬픔과 역겨움이 지속되는 패턴이 있어요.</p><p class="wv__desc">오늘은 대인관계에서 겪은 갈등이 감정에 큰 영향을 주었어<br />요. 여러 케어 중에서는 심호흡하기가 가장 도움이 되었어요.</p></div>
+              <div class="wv__card">
+                <p class="wv__h" style="top:20px">금일 감정</p>
+                <i class="wv__bar wv__bar--day" style="left:18px;--top:116px;--i:0;background-image:linear-gradient(180deg,#d98aa5 0%,#c3a6f0 35%,#b9eef5 70%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar wv__bar--day" style="left:53px;--top:99px;--i:1;background-image:linear-gradient(180deg,#a9c4ea 0%,#b9dfc0 45%,#d9f8a4 72%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar wv__bar--day" style="left:88px;--top:150.5px;--i:2;background-image:linear-gradient(180deg,#d98aa5 0%,#e9b7c6 45%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar wv__bar--day" style="left:123px;--top:51px;--i:3;background-image:linear-gradient(180deg,#a9c5f0 0%,#a9c5f0 55%,#c3a6f0 82%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar wv__bar--day" style="left:158px;--top:80.5px;--i:4;background-image:linear-gradient(180deg,#a9c5f0 0%,#a9c5f0 50%,#c3a6f0 80%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar wv__bar--day" style="left:192.5px;--top:116px;--i:5;background-image:linear-gradient(180deg,#a9c5f0 0%,#b6b6f4 55%,#c3a6f0 75%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__bar wv__bar--day" style="left:262.5px;--top:116px;--i:6;opacity:.75;background-image:linear-gradient(180deg,#f5fba0 0%,#fafdd6 50%,rgb(255 255 255 / 0) 100%)"></i>
+                <i class="wv__now"></i>
+                <div class="wv__axis"><i style="left:28px"></i><i style="left:63px"></i><i style="left:98px"></i><i style="left:133px"></i><i style="left:168px"></i><i style="left:202.5px"></i><i class="is-now" style="left:237.5px"></i><i style="left:272.5px"></i></div>
+                <p class="wv__lbl wv__lbl--t" style="left:28px">09:10</p><p class="wv__lbl wv__lbl--t" style="left:63px">10:23</p><p class="wv__lbl wv__lbl--t" style="left:98px">11:30</p><p class="wv__lbl wv__lbl--t" style="left:133px">12:40</p><p class="wv__lbl wv__lbl--t" style="left:168px">16:10</p><p class="wv__lbl wv__lbl--t" style="left:202.5px">18:40</p><p class="wv__lbl wv__lbl--t is-now" style="left:237.5px">18:41</p><p class="wv__lbl wv__lbl--t" style="left:272.5px">18:42</p>
+                <p class="wv__h" style="top:249px">금일 감정 비율</p>
+                <div class="wv__ratio"><i style="flex:112.5;--c:#acc6f0;--n:#c3a6f0"></i><i style="flex:66.5;--c:#c3a6f0;--n:#da88a1"></i><i style="flex:40.5;--c:#da88a1;--n:#d8d8d8"></i><i style="flex:42.5;--c:#d8d8d8"></i></div>
+                <p class="wv__legend"><span style="--c:#acc6f0">슬픔 60%</span><span style="--c:#c3a6f0">역겨움 20%</span><span style="--c:#da88a1">화 10%</span><span style="--c:#d8d8d8">이 외 10%</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" style="left:1368px;top:617px;width:376px;height:326px;background:var(--light-hover)" data-r="clip" data-d="150"></div>
+    <div class="abs pill" data-r="scale" data-d="400">
+      <img src="assets/arch-pill.png" alt="" loading="lazy" />
+      <!-- Live notification card over the PNG's card (native 396×484 coords, same scale/offset as the img) -->
+      <div class="proto__ui pill__ui" style="left:-21.47px;top:-277.48px;width:396px;height:484px;--kx:0.8256;--ky:0.8256" data-pill>
+        <div class="pill__mask"></div>
+        <div class="pill__card" role="status" aria-live="polite">
+          <span class="pill__dot"><i></i><i class="is-next"></i></span>
+          <span class="pill__txt"><span>슬픔 · 역겨움</span><span class="is-next">화</span></span>
+          <span class="pill__time">10:27</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" style="left:1033px;top:1270px;width:687px;height:544.92px;background:var(--bg-light-gray)" data-r="clip"></div>
+    <div class="abs chart" style="inset:0" data-chart>
+      <p class="abs" style="left:1111.5px;top:1343.55px;font-size:26.745px;font-weight:600;line-height:1.5;color:#1a1a1a">이번 주 감정</p>
+      <div class="bar" style="left:1112.4px;--d:0;background-image:linear-gradient(180deg,#f98ba0 0%,#c6acfa 23.077%,#fff 35.577%,#fff 40.865%,#fdfda3 61.058%,#abedf5 75.962%,rgb(255 255 255 / 0) 89.423%)"></div>
+      <div class="bar" style="left:1187.6px;--d:80;background-image:linear-gradient(180deg,#98c9f9 0%,#d6f8a4 24.038%,#f98ba0 39.137%,#fff 52.885%,#fff 60.577%,#d6f8a4 64.423%,#fdfda3 72.596%,rgb(255 255 255 / 0) 89%)"></div>
+      <div class="bar" style="left:1270.08px;--d:160;background-image:linear-gradient(180deg,#f98ba0 0%,#c6acfa 18.269%,#fff 27.885%,#fff 30.769%,#b6b6fa 39.904%,#ffb89e 50%,#98c9f9 62.981%,rgb(255 255 255 / 0) 89%)"></div>
+      <div class="bar" style="left:1350.59px;--d:240;background-image:linear-gradient(180deg,#98c9f9 0%,#fff 18.75%,#fff 22.596%,#98c9f9 39.904%,#c6acfa 52.404%,#fff 63.462%,#c6acfa 70.673%,rgb(255 255 255 / 0) 89%)"></div>
+      <div class="bar" style="left:1427.59px;--d:320;background-image:linear-gradient(180deg,#c6acfa 0%,#fff 18.269%,#f98ba0 36.058%,#fff 48.077%,#bef6ca 58.654%,#98c9f9 75.481%,rgb(255 255 255 / 0) 89%)"></div>
+      <div class="bar" style="left:1511.68px;--d:400;background-image:linear-gradient(180deg,#98c9f9 0%,#fff 27.885%,#fdfda3 37.5%,#c6acfa 56.731%,#ffb89e 68.269%,rgb(255 255 255 / 0) 89%)"></div>
+      <div class="bar" style="left:1595.96px;--d:480;background-image:linear-gradient(180deg,#f98ba0 0%,#c6acfa 25.962%,#fff 36.538%,#98c9f9 48.558%,#c6acfa 66.827%,#fdfda3 75.481%,rgb(255 255 255 / 0) 89%)"></div>
+
+      <div class="mark" style="left:1111.5px;top:1524.07px;--d:0"><img src="assets/arch-mark-a.svg" alt="" /></div>
+      <div class="mark" style="left:1187.6px;top:1570.88px;--d:80"><img src="assets/arch-mark-b.svg" alt="" /></div>
+      <div class="mark" style="left:1270.08px;top:1495.66px;--d:160"><img src="assets/arch-mark-b.svg" alt="" /></div>
+      <div class="mark" style="left:1350.59px;top:1590.94px;--d:240"><img src="assets/arch-mark-b.svg" alt="" /></div>
+      <div class="mark" style="left:1350.59px;top:1473.93px;--d:240"><img src="assets/arch-mark-b.svg" alt="" /></div>
+      <div class="mark" style="left:1427.59px;top:1550.82px;--d:320"><img src="assets/arch-mark-b.svg" alt="" /></div>
+      <div class="mark" style="left:1427.59px;top:1465.57px;--d:320"><img src="assets/arch-mark-b.svg" alt="" /></div>
+      <div class="mark" style="left:1511.68px;top:1492.31px;--d:400"><img src="assets/arch-mark-b.svg" alt="" /></div>
+      <div class="mark" style="left:1595.96px;top:1515.72px;--d:480"><img src="assets/arch-mark-b.svg" alt="" /></div>
+
+      <img class="abs" src="assets/arch-axis.svg" alt="" style="left:1133.89px;top:1695.52px;width:483.441px;height:1.444px" />
+      <img class="abs" src="assets/arch-dot.svg" alt="" style="left:1128.7px;top:1691.05px;width:10.38px;height:10.38px" />
+      <img class="abs" src="assets/arch-dot.svg" alt="" style="left:1209.39px;top:1691.05px;width:10.38px;height:10.38px" />
+      <img class="abs" src="assets/arch-dot.svg" alt="" style="left:1289.97px;top:1691.05px;width:10.38px;height:10.38px" />
+      <img class="abs" src="assets/arch-dot-on.svg" alt="" style="left:1370.48px;top:1691.05px;width:10.38px;height:10.38px" />
+      <img class="abs" src="assets/arch-dot.svg" alt="" style="left:1451.05px;top:1691.05px;width:10.38px;height:10.38px" />
+      <img class="abs" src="assets/arch-dot.svg" alt="" style="left:1531.57px;top:1691.05px;width:10.38px;height:10.38px" />
+      <img class="abs" src="assets/arch-dot.svg" alt="" style="left:1612.26px;top:1691.05px;width:10.38px;height:10.38px" />
+      <p class="day" style="left:1131.26px">일</p>
+      <p class="day" style="left:1212.68px">월</p>
+      <p class="day" style="left:1293.99px">화</p>
+      <p class="day" style="left:1375.23px">수</p>
+      <p class="day" style="left:1456.54px">목</p>
+      <p class="day" style="left:1537.78px">금</p>
+      <p class="day" style="left:1619.21px">토</p>
+    </div>
+
+    <p class="abs" style="left:200px;top:1859px;font-size:16px;font-weight:500;line-height:1.5;letter-spacing:0.16px" data-r="up">Emotion Report</p>
+    <p class="abs t-md" style="left:200px;top:1885px" data-r="up" data-d="100">오늘의 마음 정리</p>
+    <p class="abs b-sm" style="left:200px;top:1952px;width:346px" data-r="up" data-d="200">감정 리포트는 하루 동안 쌓인 감정 기록을 바탕으로 주요 감정과 반복되는 패턴을 정리해, 오늘의 마음 상태를 쉽게 이해할 수 있도록 보여줍니다.</p>
+    <div class="panel" style="left:592px;top:1859px;width:411px;height:326px;background:var(--light)" data-r="clip"></div>
+    <div class="abs report" data-r="up" data-d="300">
+      <p class="report__t">감정 리포트</p>
+      <p class="report__b" data-type="아침에는 신뢰감이 느껴졌지만, 점심 무렵 역겨움과 화가&#10;차례로 나타났어요. 감정이 슬픔으로 가라앉았고, 잠시&#10;틈을 가진 뒤 밤에는 예기와 예상의 감정으로 이어졌어요."></p>
+    </div>
+    <p class="abs" style="left:1394px;top:1841px;font-size:16px;font-weight:500;line-height:1.5;letter-spacing:0.16px" data-r="up">Emotion Report</p>
+    <p class="abs t-md" style="left:1394px;top:1867px" data-r="up" data-d="100">감정의 변화</p>
+    <p class="abs b-sm" style="left:1394px;top:1934px;width:326px" data-r="up" data-d="200">감정 그래프는 하루 동안 기록된 감정의 변화와 강도를 시간대별로 보여줘, 감정의 흐름을 한눈에 돌아볼 수 있도록 합니다.</p>
+  </section>
+
+  <!-- 17. Share — circle motion ───────────────────────────────────────── -->
+  <section class="sec share">
+    <div class="abs orbit" data-r="scale" aria-hidden="true">
+      <div class="orbit__ring"></div>
+      <div class="orbit__core"></div>
+      <div class="orbit__arm">
+        <i style="--a:0deg;background:#fdfda3"></i><i style="--a:45deg;background:#d6f8a4"></i>
+        <i style="--a:90deg;background:#bef6ca"></i><i style="--a:135deg;background:#abedf5"></i>
+        <i style="--a:180deg;background:#98c9f9"></i><i style="--a:225deg;background:#c6acfa"></i>
+        <i style="--a:270deg;background:#f98ba0"></i><i style="--a:315deg;background:#ffb89e"></i>
+      </div>
+    </div>
+
+    <div class="lane" style="left:682.9px;width:263.08px" data-r="up">
+      <div class="lane__track" style="--dur:46s" data-lane>
+        <div class="scard" style="width:263.08px;height:392.95px"><img class="fill" src="assets/cm-1.png" alt="김서진의 감정 카드" loading="lazy" /></div>
+        <div class="scard" style="width:262.99px;height:393.09px"><img class="fill" src="assets/cm-4.png" alt="고민준의 감정 카드" loading="lazy" /></div>
+        <div class="stext">현재 나의 감정의 색은<br />무슨 색인지 확인해보세요.</div>
+      </div>
+    </div>
+    <div class="lane lane--b" style="left:966.75px;width:270.25px" data-r="up" data-d="150">
+      <div class="lane__track" style="--dur:52s" data-lane>
+        <div class="scard" style="width:267px;height:393px;margin-left:2.25px"><img class="fill" src="assets/cm-2.png" alt="이나영의 감정 카드" loading="lazy" /></div>
+        <div class="scard" style="width:270.25px;height:150.73px;border-radius:0"><img class="fill" src="assets/cm-3.png" alt="친구들과 공유하며 서로의 기분을 확인해보세요." loading="lazy" /></div>
+        <div class="scard yj" style="margin-left:2.64px">
+          <div class="yj__layers">
+            <div style="inset:0;overflow:hidden;border-radius:29.564px"><img src="assets/cm-5a.png" alt="" loading="lazy" style="position:absolute;height:127.36%;left:-29.95%;top:-13.68%;width:129.95%" /></div>
+            <div style="inset:0;overflow:hidden;border-radius:29.564px"><img src="assets/cm-5b.png" alt="" loading="lazy" style="position:absolute;height:146.64%;left:1.09%;top:-21.05%;width:100.13%" /></div>
+            <img src="assets/cm-5c.png" alt="" loading="lazy" style="inset:0;width:100%;height:100%;object-fit:cover" />
+            <img src="assets/cm-5d.png" alt="" loading="lazy" style="inset:0;width:100%;height:100%;object-fit:cover" />
+          </div>
+          <p class="yj__date">Aug.17th</p>
+          <img class="yj__arrow" src="assets/cm-arrow.svg" alt="" />
+          <p class="yj__who"><img src="assets/cm-avatar.png" alt="" />유정연</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18. Outro ───────────────────────────────────────────────────────── -->
+  <footer class="sec outro">
+    <div class="abs outro__core" aria-hidden="true"></div>
+    <div class="abs outro__logo" data-r="wipe"><img src="assets/overview-logo.svg" width="258" height="38.784" alt="emora" /></div>
+    <p class="abs outro__tag center-x" data-r="lines" data-d="500"><span class="ln"><span>감정과 행동 사이, 작은 틈</span></span></p>
+    <button class="abs top-btn" type="button" data-top data-r="fade" data-d="900">맨 위로</button>
+  </footer>
+  <div class="foot">© 2026 emora · Capstone Design</div>
+</div>
+</body>
+</html>
